@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSignin.setOnClickListener(this);
     }
 
+private void StrictMode(){
+        android.os.strictmode.ThreadPolicy policy = new android.os.strictmode.ThreadPolicy.Builder().permit
+}
     @Override
     public void onClick(View v) {
         Register();
