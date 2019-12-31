@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String BASE_URL = "http://192.168.232.2:38749";
+    private String BASE_URL = "http://10.0.2.2:3000";
     private EditText etfname, etlname, etusername, etpassword, etconpassword;
     private Button btnSignin;
     private ImageView imgProfile;
