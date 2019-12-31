@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import Interface.StudentAPI;
+import com.example.taskmanager.Interface.StudentAPI;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 private void StrictMode(){
-        android.os.strictmode.ThreadPolicy policy = new android.os.strictmode.ThreadPolicy.Builder().permit
+    android.os.StrictMode.ThreadPolicy policy =
+            new android.os.StrictMode.ThreadPolicy.Builder().permitAll().build();
+    android.os.StrictMode.setThreadPolicy(policy);
 }
     @Override
     public void onClick(View v) {

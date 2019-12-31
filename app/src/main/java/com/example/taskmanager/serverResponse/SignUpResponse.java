@@ -1,4 +1,4 @@
-package serverResponse;
+package com.example.taskmanager.serverResponse;
 
 public class SignUpResponse {
 
